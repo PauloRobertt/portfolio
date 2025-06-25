@@ -5,8 +5,8 @@
     align-items: center;
     gap: 2em;
     width: 100%;
+    padding: 0 7em;
     color: var(--textColor);
-    background-color: var(--primaryColor);
 }
 
 .tittleConhecimento {
@@ -28,7 +28,7 @@
 .conhecimentos {
     display: flex;
     flex-wrap: wrap;
-    width: 51%;
+    max-width: 600px;
     gap: 2em;
 }
 
