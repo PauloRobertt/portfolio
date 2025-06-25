@@ -28,7 +28,7 @@
 .projetos {
     width: 1054px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 4em;
 }

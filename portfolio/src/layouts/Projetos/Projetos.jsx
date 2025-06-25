@@ -16,12 +16,12 @@ export default function Projetos() {
 
                     descriptionImg='Página Home do projeto costs'
 
-                    tittleProject='Projeto Costs'
+                    titleProject='Projeto Costs'
 
                     linkSite='https://github.com/PauloRobertt/Project_Costs'
                     linkGitHub='https://github.com/PauloRobertt/Project_Costs'
 
-                    descriptionProject='O Project Costs é uma aplicação web para cadastro de projetos e controle de orçamentos, permitindo acompanhar serviços e custos associados. Desenvolvido com React.js no front-end e Spring Boot no back-end, o sistema garante uma gestão eficiente e segura dos dados.'
+                    descriptionProject='Este projeto é uma aplicação full stack desenvolvida com React.js no front-end e Spring Boot no back-end. Utiliza o banco de dados relacional PostgreSQL e segue boas práticas de versionamento com Git Flow. O objetivo principal é gerenciar projetos e seus serviços associados, garantindo o controle de orçamento e custos usados.'
 
                     tecnologias={['ReactJS', 'React-Router-Dom', 'CSS-Modules', 'Spring Boot', 'Maven', 'JPA', 'PostgreSQL']}
                 />
@@ -31,7 +31,7 @@ export default function Projetos() {
 
                     descriptionImg='Página em desenvolvimento'
 
-                    tittleProject='Sistema de Reservas de Hotel'
+                    titleProject='Sistema de Reservas de Hotel'
 
                     linkSite='https://github.com/PauloRobertt/Sistema-de-Reservas-de-Hotel'
                     linkGitHub='https://github.com/PauloRobertt/Sistema-de-Reservas-de-Hotel'
@@ -42,11 +42,26 @@ export default function Projetos() {
                 />
 
                 <CardProjetos
+                    imgProject={objImagens.projectSistemaAgenda}
+
+                    descriptionImg='Página Home do sistema agenda'
+
+                    titleProject='Sistema de Agenda'
+
+                    linkSite='https://sistema-de-agenda.onrender.com'
+                    linkGitHub='https://github.com/PauloRobertt/sistema-de-agenda'
+
+                    descriptionProject='Este projeto é uma aplicação full stack desenvolvida com Node.js e Express no back-end, utilizando MongoDB como banco de dados não relacionado. A aplicação segue boas práticas de versionamento com Git Flow . Seu objetivo é fornecer uma agenda digital simples e funcional, permitindo o cadastro, listagem, edição e remoção de contatos.'
+
+                    tecnologias={['NodeJS', 'Express.js', 'Mongoose', 'Dotenv', 'Bcrypt', 'Express-Validator', 'Express-Session & Connect-Mongo']}
+                />
+
+                <CardProjetos
                     imgProject={objImagens.projectAPi}
 
                     descriptionImg='API'
 
-                    tittleProject='API Carros'
+                    titleProject='API Carros'
 
                     linkSite='https://github.com/gefilho/api_carros'
                     linkGitHub='https://github.com/gefilho/api_carros'
@@ -61,7 +76,7 @@ export default function Projetos() {
 
                     descriptionImg='banner controle de Estoque'
 
-                    tittleProject='Controle de Estoque'
+                    titleProject='Controle de Estoque'
 
                     linkSite='https://github.com/PauloRobertt/CONTROLE_DE_ESTOQUE'
                     linkGitHub='https://github.com/PauloRobertt/CONTROLE_DE_ESTOQUE'
@@ -76,7 +91,7 @@ export default function Projetos() {
 
                     descriptionImg='Banner do projeto Restaurante'
 
-                    tittleProject='Projeto Restaurante'
+                    titleProject='Projeto Restaurante'
 
                     linkSite='https://projeto-mini-mundo.vercel.app'
                     linkGitHub='https://github.com/PauloRobertt/PROJETO-RESTAURANT'
@@ -91,7 +106,7 @@ export default function Projetos() {
 
                     descriptionImg='Banner do projeto Agencia de Design'
 
-                    tittleProject='Agência de Design'
+                    titleProject='Agência de Design'
 
                     linkSite='https://projeto-agencia-de-design.vercel.app'
                     linkGitHub='https://github.com/PauloRobertt/PROJETO-AGENCIA-DE-DESIGN'
