@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 import Menu from '../Menu/Menu.jsx';
 import styles from './Header.module.css';
@@ -18,11 +19,61 @@ export default function Header() {
             <div className={styles.desktops}>
                 <nav>
                     <ul className={styles.links}>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#aboutme">Sobre</a></li>
-                        <li><a href="#conhecimento">Conhecimentos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='section-aboutMe'
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='section-aboutMe'
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                            >
+                                Sobre
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='section-conhecimentos'
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                            >
+                                Conhecimentos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='section-projetos'
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                            >
+                                Projetos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                to='section-contato'
+                                smooth={true}
+                                duration={500}
+                                offset={-70}
+                            >
+                                Contato
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
             </div>

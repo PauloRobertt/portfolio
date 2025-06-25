@@ -1,4 +1,5 @@
 import styles from './Contato.module.css';
+import { Element } from 'react-scroll';
 
 import CardContato from '../../components/CardContato/CardContato.jsx';
 
@@ -9,32 +10,34 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Contato() {
     return (
-        <section id='contato' className={styles.sectionContato}>
-            <div className={styles.tittleContato}>
-                <h2>Contato</h2>
-                <h3>Entre em contato comigo!</h3>
-            </div>
-            <div className={styles.containerContato}>
-                <CardContato
-                    icon={<MdOutlineEmail size={45} color='var(--textColor)'/>}
-                    text='E-Mail'
-                />
+        <Element name='section-contato'>
+            <section className={styles.sectionContato}>
+                <div className={styles.tittleContato}>
+                    <h2>Contato</h2>
+                    <h3>Entre em contato comigo!</h3>
+                </div>
+                <div className={styles.containerContato}>
+                    <CardContato
+                        icon={<MdOutlineEmail size={45} color='var(--textColor)' />}
+                        text='E-Mail'
+                    />
 
-                <CardContato
-                    icon={<MdOutlineLocalPhone size={45} color='var(--textColor)'/>}
-                    text='Telefone'
-                />
+                    <CardContato
+                        icon={<MdOutlineLocalPhone size={45} color='var(--textColor)' />}
+                        text='Telefone'
+                    />
 
-                <CardContato
-                    icon={<FaLinkedin size={45} color='var(--textColor)' />}
-                    text='Linkedin'
-                />
+                    <CardContato
+                        icon={<FaLinkedin size={45} color='var(--textColor)' />}
+                        text='Linkedin'
+                    />
 
-                <CardContato
-                    icon={<FaGithub size={45} color='var(--textColor)'/>}
-                    text='GitHub'
-                />
-            </div>
-        </section>
+                    <CardContato
+                        icon={<FaGithub size={45} color='var(--textColor)' />}
+                        text='GitHub'
+                    />
+                </div>
+            </section>
+        </Element>
     );
 }

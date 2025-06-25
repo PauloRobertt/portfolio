@@ -30,23 +30,24 @@ header {
     list-style: none;
 }
 
-header .links a {
+header .links .link {
     margin-left: 20px;
     text-decoration: none;
     color: var(--textColor);
     display: flex;
     flex-direction: column;
     font-weight: bold;
+    cursor: pointer;
 }
 
-header .links a::after {
+header .links .link::after {
     content: "";
     background-color: var(--detailsColor);
     width: 0%;
     height: 2px;
 }
 
-header .links a:hover::after {
+header .links .link:hover::after {
     animation-name: AnimHeader;
     animation-duration: 500ms;
     width: 100%;

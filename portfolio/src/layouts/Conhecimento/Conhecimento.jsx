@@ -1,5 +1,6 @@
 import styles from './Conhecimento.module.css'
 import ContainerConhecimento from '../../components/CardConhecimento/ContainerConhecimento.jsx';
+import { Element } from 'react-scroll';
 
 //Icons
 import { FaHtml5 } from "react-icons/fa";
@@ -18,67 +19,69 @@ import { FaJava } from "react-icons/fa";
 
 export default function Conhecimento() {
     return (
-        <section id='conhecimento' className={styles.sectionConhecimento}>
-            <div className={styles.tittleConhecimento}>
-                <h2>Conhecimentos</h2>
-                <h3>Confira meus conhecimentos</h3>
-            </div>
-            <div className={styles.conhecimentos}>
-                <ContainerConhecimento
-                    imgTec={<FaHtml5 size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='HTML5'
-                />
+        <Element name='section-conhecimentos'>
+            <section className={styles.sectionConhecimento}>
+                <div className={styles.tittleConhecimento}>
+                    <h2>Conhecimentos</h2>
+                    <h3>Confira meus conhecimentos</h3>
+                </div>
+                <div className={styles.conhecimentos}>
+                    <ContainerConhecimento
+                        imgTec={<FaHtml5 size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='HTML5'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<FaCss3 size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='CSS3'
-                />
-                
-                <ContainerConhecimento
-                    imgTec={<IoLogoJavascript size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='JavaScript'
-                />
+                    <ContainerConhecimento
+                        imgTec={<FaCss3 size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='CSS3'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<FaNodeJs size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='NodeJS'
-                />
+                    <ContainerConhecimento
+                        imgTec={<IoLogoJavascript size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='JavaScript'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<RiReactjsFill size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='ReactJS'
-                />
+                    <ContainerConhecimento
+                        imgTec={<FaNodeJs size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='NodeJS'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<FaGitAlt size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='Git'
-                />
+                    <ContainerConhecimento
+                        imgTec={<RiReactjsFill size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='ReactJS'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<FaGithub size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='GitHub'
-                />
+                    <ContainerConhecimento
+                        imgTec={<FaGitAlt size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='Git'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<IoIosGitBranch size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='GitFlow'
-                />
-                
-                <ContainerConhecimento
-                    imgTec={<DiPostgresql size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='PostgreSQL'
-                />
+                    <ContainerConhecimento
+                        imgTec={<FaGithub size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='GitHub'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<GrMysql size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='MySQL'
-                />
+                    <ContainerConhecimento
+                        imgTec={<IoIosGitBranch size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='GitFlow'
+                    />
 
-                <ContainerConhecimento
-                    imgTec={<FaJava size={62} color={'var(--detailsColor)'}/>}
-                    tecnologia='Java'
-                />
-            </div>
-        </section>
+                    <ContainerConhecimento
+                        imgTec={<DiPostgresql size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='PostgreSQL'
+                    />
+
+                    <ContainerConhecimento
+                        imgTec={<GrMysql size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='MySQL'
+                    />
+
+                    <ContainerConhecimento
+                        imgTec={<FaJava size={62} color={'var(--detailsColor)'} />}
+                        tecnologia='Java'
+                    />
+                </div>
+            </section>
+        </Element>
     );
 }
