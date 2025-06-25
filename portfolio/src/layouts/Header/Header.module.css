@@ -10,6 +10,7 @@ header {
     border-bottom: 2px solid var(--detailsColor);
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 
 .menuMobile {
@@ -35,6 +36,7 @@ header .links a {
     color: var(--textColor);
     display: flex;
     flex-direction: column;
+    font-weight: bold;
 }
 
 header .links a::after {

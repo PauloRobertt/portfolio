@@ -5,7 +5,6 @@ import styles from './Header.module.css';
 
 import { IoMenu } from "react-icons/io5";
 
-
 export default function Header() {
     const [statusMenu, setStatusMenu] = useState(false);
 
