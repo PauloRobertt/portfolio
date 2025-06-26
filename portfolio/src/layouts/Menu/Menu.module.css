@@ -5,9 +5,9 @@
 }
 
 .statusInativo {
-  transform: translateX(100vw); /* desloca 100% da largura da tela */
-  opacity: 0;
-  pointer-events: none;
+    transform: translateX(100vw);
+    opacity: 0;
+    pointer-events: none;
 }
 
 .menu {
@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     background-color: var(--primaryColor);
-    width: 100%;;
+    width: 100%;
     border-bottom: 2px solid var(--detailsColor);
     transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -51,5 +51,13 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .menuIcon {
         font-size: 40px;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .statusAtivo {
+        transform: translateX(50vw);
     }
 }
