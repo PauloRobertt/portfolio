@@ -36,12 +36,17 @@
 
 /* Mobile First (até 480px) */
 @media (max-width: 767px) {
+    .sectionConhecimento{
+        padding: 0em 1em;
+    }
+
     .tittleConhecimento{
-        font-size: 12px;
+        font-size: 0.75em;
+        text-align: center;
     }
 
     .conhecimentos{
-        width: 92%;
+        width: 100%;
     }
 }
 

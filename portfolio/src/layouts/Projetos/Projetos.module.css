@@ -37,16 +37,17 @@
 /* Mobile First (até 767px) */
 @media (max-width: 767px) {
     .sectionProjetos {
-        padding: 0;
+        padding: 0em 1em;
         width: 100%;
     }
 
     .tittleProjetos {
-        font-size: 12px;
+        font-size: 0.75em;
+        text-align: center;
     }
 
     .projetos {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
     }
 }
