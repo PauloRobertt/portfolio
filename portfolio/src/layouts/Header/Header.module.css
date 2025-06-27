@@ -74,7 +74,7 @@ header .links .link:hover::after {
         gap: 0;
     }
 
-    .menuIcon{
+    .menuIcon {
         font-size: 30px;
     }
 
@@ -91,7 +91,6 @@ header .links .link:hover::after {
     }
 }
 
-
 /* Tablets (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
@@ -99,8 +98,8 @@ header .links .link:hover::after {
         padding: 1em;
         gap: 0;
     }
-    
-    .menuIcon{
+
+    .menuIcon {
         font-size: 40px;
     }
 
@@ -117,17 +116,13 @@ header .links .link:hover::after {
     }
 }
 
-/* Laptops (1025px - 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* Estilos para laptops */
-}
-
-/* Desktops padrão (1281px - 1440px) */
-@media (min-width: 1281px) and (max-width: 1440px) {
-    /* Estilos para desktops */
-}
-
 /* Telas muito grandes (1441px +) */
-@media (min-width: 1441px) {
-    /* Estilos para telas gigantes */
+@media (min-width: 1440px) {
+    .spanHeader {
+        font-size: var(--sizeSubTittle);
+    }
+
+    header .links .link {
+        font-size: var(--sizeParagrafo);
+    }
 }

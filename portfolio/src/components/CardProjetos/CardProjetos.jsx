@@ -25,14 +25,14 @@ export default function ContainerProjetos({ imgProject, descriptionImg, titlePro
             </figure>
             <div className={`${styles.contentContainer} ${statusProject ? styles.open : styles.close}`}>
                 <div className={styles.projectContent}>
-                    <IoMdClose className={styles.closeButton} size='24px' cursor='pointer' color='var(--textColor)' onClick={openAndCloseProject} />
+                    <IoMdClose className={styles.closeButton} cursor='pointer' color='var(--textColor)' onClick={openAndCloseProject} />
                     <div className={styles.contentWrapper}>
                         <figure className={styles.contentFigure}>
                             <img src={imgProject} alt={descriptionImg} />
                         </figure>
                         <div className={styles.contentDetails}>
                             <div className={styles.topoProjeto}>
-                                <div className={styles.tittle}>
+                                <div className={styles.title}>
                                     <MdMonitor className={styles.iconCardProject} color='var(--textColor)' />
                                     <h1>{titleProject}</h1>
                                 </div>

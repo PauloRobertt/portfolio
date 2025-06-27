@@ -119,7 +119,7 @@
     align-items: center;
 }
 
-.tittle {
+.title {
     display: flex;
     align-items: center;
     gap: 1em;
@@ -130,6 +130,10 @@
     justify-content: center;
     display: flex;
     gap: 1.5em;
+}
+
+.closeButton {
+    font-size: 1.5em;
 }
 
 .redirecionamento a:hover,
@@ -229,4 +233,25 @@
         width: 100%;
     }
 
+}
+
+/* Telas muito grandes (1441px +) */
+@media (min-width: 1440px) {
+    .projectContent {
+        width: 90%;
+        height: 80%;
+        padding: 0.5em 1em;
+    }
+
+    .contentDetails {
+        gap: 3em;
+    }
+
+    .closeButton {
+        font-size: 2.5em;
+    }
+
+    .title h1 {
+        font-size: var(--sizeSubTittle);
+    }
 }

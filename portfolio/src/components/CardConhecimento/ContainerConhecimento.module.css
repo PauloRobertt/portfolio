@@ -11,6 +11,7 @@
     border-bottom: 2px solid var(--detailsColor);
     width: 7em;
     height: 8em;
+    font-weight: bold;
 }
 
 .container:hover:nth-child(1) {
@@ -54,5 +55,5 @@
 }
 
 .container:hover:nth-child(11) {
-    --detailsColor: #007396		
+    --detailsColor: #CC3E2D
 }
